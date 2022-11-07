@@ -241,3 +241,22 @@ img {
 .project:hover img {
   transform: translateY(-100%);
 }
+
+/* CLIENTS */
+
+.client {
+  overflow: hidden;
+  /* margin-top: -1px;
+  margin-left: -1px; */
+}
+
+.client img {
+  opacity: 0.7;
+  width: 75%;
+  transition: var(--transition);
+}
+
+.client:hover img {
+  opacity: 1;
+  width: 75%;
+}
