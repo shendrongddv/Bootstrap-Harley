@@ -1,0 +1,133 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Spline+Sans:wght@400;500;600;700&display=swap");
+
+/* VARIABLES */
+:root {
+  --c-brand: #f83691;
+  --c-brand-rgb: 248, 54, 145;
+  --c-dark: #303050;
+  --c-body: #636383;
+  --f-main: "Bai Jamjuree", sans-serif;
+  --transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* RESET */
+body {
+  font-family: var(--f-main);
+  color: var(--c-body);
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+  color: var(--c-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-dark);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--c-brand);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HELPERS */
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.text-brand {
+  color: var(--c-brand);
+}
+
+/* NAVBAR */
+.navbar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-weight: 700;
+  color: var(--c-dark);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--c-brand);
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--c-dark);
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: var(--c-brand);
+  color: white;
+  border: 2px solid var(--c-brand);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+}
+
+.social-icon:hover {
+  background-color: transparent;
+}
+
+/* BTN */
+.btn {
+  padding: 10px 24px;
+  border-radius: 0;
+  border-width: 2px;
+  font-weight: 500;
+}
+
+.btn-brand,
+.btn-brand:focus {
+  background-color: var(--c-brand);
+  color: white;
+  border-color: var(--c-brand);
+}
+
+.btn-brand:hover {
+  background-color: transparent;
+  color: var(--c-brand);
+  border-color: var(--c-brand);
+}
+
+/* HOME */
+#home {
+  background-image: url(../webp/hero.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
