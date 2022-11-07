@@ -17,12 +17,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
     />
+    <!-- CSS Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <!-- CSS Custom -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="/">Harley Quinn.</a>
         <button
@@ -36,7 +41,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div
+          class="collapse navbar-collapse mt-3 mt-lg-0 px-4 py-4 px-lg-0 py-lg-0"
+          id="navbarNav"
+        >
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link" href="#hero">Home</a>
@@ -57,7 +65,7 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <ul class="navbar-nav">
+          <ul class="navbar-nav flex-row my-3 my-lg-0">
             <li class="nav-item">
               <a class="social-icon" href="#"
                 ><i class="ri-dribbble-line"></i
@@ -96,6 +104,215 @@
       </div>
     </section>
 
+    <!-- SERVICES -->
+    <section id="services" class="section-padding section-connector">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h1>Services</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quibusdam, incidunt ipsum repudiandae doloremque at deserunt
+                vitae!
+              </p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-4 text-center">
+          <!-- SERVICE CARD -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="service py-5 px-4 border">
+              <div class="service-icon">
+                <i class="ri-pencil-ruler-2-line"></i>
+              </div>
+              <h5 class="mt-4">Branding</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                officia unde maxime.
+              </p>
+              <a href="#" class="custom-link">
+                <span>Read More</span>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service py-5 px-4 border">
+              <div class="service-icon">
+                <i class="ri-pen-nib-line"></i>
+              </div>
+              <h5 class="mt-4">Logo Design</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                officia unde maxime.
+              </p>
+              <a href="#" class="custom-link">
+                <span>Read More</span>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service py-5 px-4 border">
+              <div class="service-icon">
+                <i class="ri-camera-3-line"></i>
+              </div>
+              <h5 class="mt-4">Photography</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                officia unde maxime.
+              </p>
+              <a href="#" class="custom-link">
+                <span>Read More</span>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service py-5 px-4 border">
+              <div class="service-icon">
+                <i class="ri-profile-line"></i>
+              </div>
+              <h5 class="mt-4">UI Design</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                officia unde maxime.
+              </p>
+              <a href="#" class="custom-link">
+                <span>Read More</span>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="work" class="section-padding section-connector">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h1>Work</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quibusdam, incidunt ipsum repudiandae doloremque at deserunt
+                vitae!
+              </p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <!-- WORK CARD -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/webp/p-1.webp" alt="" loading="lazy" />
+              <div class="content">
+                <a
+                  href="./assets/webp/p-1.webp"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- WORK CARD -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/webp/p-2.webp" alt="" loading="lazy" />
+              <div class="content">
+                <a
+                  href="./assets/webp/p-2.webp"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- WORK CARD -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/webp/p-3.webp" alt="" loading="lazy" />
+              <div class="content">
+                <a
+                  href="./assets/webp/p-3.webp"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- WORK CARD -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/webp/p-4.webp" alt="" loading="lazy" />
+              <div class="content">
+                <a
+                  href="./assets/webp/p-4.webp"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- WORK CARD -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/webp/p-5.webp" alt="" loading="lazy" />
+              <div class="content">
+                <a
+                  href="./assets/webp/p-5.webp"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- WORK CARD -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/webp/p-6.webp" alt="" loading="lazy" />
+              <div class="content">
+                <a
+                  href="./assets/webp/p-6.webp"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-padding">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h1>Clients I've worked with</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quibusdam, incidunt ipsum repudiandae doloremque at deserunt
+                vitae!
+              </p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Script -->
     <!-- Script Bootstrap -->
     <script
@@ -103,6 +320,8 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <!-- Script Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <!-- Script Custom -->
     <script src="./assets/js/app.js"></script>
   </body>
