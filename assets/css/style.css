@@ -93,10 +93,19 @@ img {
   transition: var(--transition);
 }
 
+.navbar-toggler {
+  border-radius: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .navbar.scrolled {
   padding-top: 7px;
   padding-bottom: 7px;
   background-color: white;
+  box-shadow: var(--shadow);
 }
 
 .navbar .navbar-nav .nav-link {
@@ -104,7 +113,8 @@ img {
   color: var(--c-dark);
 }
 
-.navbar .navbar-nav .nav-link:hover {
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
   color: var(--c-brand);
 }
 
@@ -259,4 +269,75 @@ img {
 .client:hover img {
   opacity: 0.9;
   width: 75%;
+}
+
+/* RESUME */
+.eduexp {
+  position: relative;
+}
+
+.eduexp::before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: rgba(var(--c-brand-rgb), 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.eduexp::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  background-color: var(--c-brand);
+  position: absolute;
+  left: -7px;
+  top: 0;
+}
+
+/* CONTACT */
+#contact .form-control {
+  border-radius: 0;
+}
+
+#contact .form-control:focus {
+  box-shadow: none;
+  border-color: var(--c-brand);
+}
+
+#contact input.form-control {
+  height: 44px;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--c-dark);
+  padding-top: 80px;
+}
+
+footer h4 {
+  color: white;
+}
+
+footer p,
+footer li,
+footer li a,
+footer p a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-top {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
